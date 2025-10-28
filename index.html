@@ -5,18 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>TODO LIST</h1>
-    <form action="" method="get">
-        <input type="text">
-    </form>
+    <section class="main">
+        <h1 class="main-title">TODO LIST</h1>
+        <form class="main-seach" action="#" method="get">
+            <input class="main-inp-text" name="note" id="note" type="text" placeholder="Search note...">
+            <select class="main-select" name="" id="">
+                <option value="all">ALL</option>
+                <option value="complete">Complete</option>
+                <option value="incomplete">Incomplete</option>
+            </select>
+            <button class="main-button" type="button"><img class="moon-svg" src="./assets/icons/moon.svg"
+                    alt=""></button>
+        </form>
 
-    <!-- <form action="#" method="post">
-        <input type="text">
-        <input type="submit" value="">
-    </form> -->
+        <section class="note-list">
+            <form class="note" action="#" method="post">
+                <div class="note-checkbox-wrap">
+                    <input class="note-checkbox" type="checkbox">
+                    <p class="note-title">Note</p>
+                </div>
+                <div class="note-buttons">
+                    <button class="note-button-update" type="button" id="note-update"><img
+                            src="./assets/icons/pencil.svg" alt=""></button>
+                    <button class="note-button-delete" type="button" id="note-delete"><img
+                            src="./assets/icons/trash_bin.svg" alt=""></button>
+                </div>
+            </form>
+            <form class="note" action="#" method="post">
+                <div class="note-checkbox-wrap">
+                    <input class="note-checkbox" type="checkbox">
+                    <p class="note-title">Note</p>
+                </div>
+                <div class="note-buttons">
+                    <button class="note-button-update" type="button" id="note-update"><img
+                            src="./assets/icons/pencil.svg" alt=""></button>
+                    <button class="note-button-delete" type="button" id="note-delete"><img
+                            src="./assets/icons/trash_bin.svg" alt=""></button>
+                </div>
+            </form>
+            <form class="note" action="#" method="post">
+                <div class="note-checkbox-wrap">
+                    <input class="note-checkbox" type="checkbox">
+                    <p class="note-title">Note</p>
+                </div>
+                <div class="note-buttons">
+                    <button class="note-button-update" type="button" id="note-update"><img
+                            src="./assets/icons/pencil.svg" alt=""></button>
+                    <button class="note-button-delete" type="button" id="note-delete"><img
+                            src="./assets/icons/trash_bin.svg" alt=""></button>
+                </div>
+            </form>
+            <form class="note" action="#" method="post">
+                <div class="note-checkbox-wrap">
+                    <input class="note-checkbox" type="checkbox">
+                    <p class="note-title">Note</p>
+                </div>
+                <div class="note-buttons">
+                    <button class="note-button-update" type="button" id="note-update"><img
+                            src="./assets/icons/pencil.svg" alt=""></button>
+                    <button class="note-button-delete" type="button" id="note-delete"><img
+                            src="./assets/icons/trash_bin.svg" alt=""></button>
+                </div>
+            </form>
+
+        </section>
+    </section>
+
 </body>
 
 </html>
